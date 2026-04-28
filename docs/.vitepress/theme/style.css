@@ -1,0 +1,98 @@
+/*
+  Gravinium theme
+  main: #00ff35
+  accent: #fe69fc
+*/
+
+/* base colors */
+
+:root {
+  --vp-c-brand-1: #00ff35;
+  --vp-c-brand-2: #2ce053;
+  --vp-c-brand-3: #51c76c;
+
+  --vp-c-accent: #fe69fc;
+
+  --vp-c-bg: #0b0b0f;
+  --vp-c-bg-soft: #14141a;
+  --vp-c-bg-mute: #1c1c24;
+
+  --vp-c-text-1: #f2f2f2;
+  --vp-c-text-2: #c9c9c9;
+  --vp-c-text-3: #8a8a8a;
+
+  /* --vp-layout-max-width: 1440px; */
+  --vp-layout-max-width: min(1920px, 100dvw);
+}
+
+/* light mode */
+
+:root:not(.dark) {
+  --vp-c-brand-1: #00d42a;
+  --vp-c-brand-2: #27c449;
+  --vp-c-brand-3: #43a75a;
+
+  --vp-c-accent: #d859d6;
+
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-soft: #f6f6f7;
+  --vp-c-bg-mute: #f1f1f2;
+
+  --vp-c-text-1: #1a1a1a;
+  --vp-c-text-2: #3a3a3a;
+  --vp-c-text-3: #6b6b6b;
+}
+
+/* links */
+
+a {
+  color: var(--vp-c-brand-1);
+}
+
+a:hover {
+  color: var(--vp-c-brand-2);
+}
+
+/* buttons */
+
+.VPButton.brand {
+  background-color: var(--vp-c-brand-1);
+  color: #000;
+  border: none;
+}
+
+.VPButton.brand:hover {
+  background-color: var(--vp-c-brand-2);
+}
+
+/* text emphasis */
+
+strong {
+  color: var(--vp-c-accent);
+}
+
+mark {
+  background: rgba(254, 105, 252, 0.15);
+  color: inherit;
+}
+
+/* code */
+
+code {
+  border-radius: 6px;
+}
+
+/* navbar */
+
+.VPNavBar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* hero title */
+
+.VPHero .name {
+  background: linear-gradient(90deg, #00ff35 0%, #fe69fc 120%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
