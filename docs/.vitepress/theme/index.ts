@@ -4,7 +4,7 @@ import './style.css'
 export default {
   ...DefaultTheme,
 
-  enhanceApp({ app }) {
-    // reserved for future components/plugins
+  enhanceApp( ctx ) {
+    DefaultTheme.enhanceApp(ctx)
   }
 }

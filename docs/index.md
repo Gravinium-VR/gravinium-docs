@@ -21,5 +21,5 @@ features:
     details: Tools, workflows, and systems for VRChat world and asset development.
 
   - title: Knowledge Base
-    details: Shared concepts, VRChat specific knowledge, and cross-project documentation.
+    details: Guides, VRChat specific knowledge, and cross-project documentation.
 ---
