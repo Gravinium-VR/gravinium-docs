@@ -13,8 +13,8 @@ export const jilwerSidebar: DefaultTheme.SidebarItem[] = [
         text: 'API',
         collapsed: true,
         items: [
-          { text: 'Auth', link: '/projects/jilwer/api/auth' },
-          { text: 'Types', link: '/projects/jilwer/api/types' }
+          { text: 'Overview', link: '/projects/jilwer/api/'},
+          // { text: 'Types', link: '/projects/jilwer/api/types' }
         ]
       },
 
@@ -22,7 +22,8 @@ export const jilwerSidebar: DefaultTheme.SidebarItem[] = [
         text: 'Examples',
         collapsed: true,
         items: [
-          { text: 'Basic Usage', link: '/projects/jilwer/examples/basic-usage' }
+          { text: 'Overview', link: '/projects/jilwer/examples/'},
+          // { text: 'Basic Usage', link: '/projects/jilwer/examples/basic-usage' }
         ]
       },
     ]

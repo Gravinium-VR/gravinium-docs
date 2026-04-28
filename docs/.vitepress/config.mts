@@ -34,12 +34,12 @@ export default defineConfig({
     },
 
     docFooter: {
-      prev: true,
-      next: true
+      prev: 'Previous',
+      next: 'Next'
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Gravinium-VR' }
+      { icon: 'github', link: 'https://github.com/Gravinium-VR' },
     ],
 
     footer: {
