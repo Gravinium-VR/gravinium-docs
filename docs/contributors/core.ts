@@ -2,7 +2,7 @@ export const core = [
   {
     avatar: 'https://github.com/NighthawkVRC.png',
     name: 'Nighthawk',
-    title: 'Co-Owner',
+    title: 'Co-Lead',
     org: 'Gravinium',
     orgLink: 'https://gravinium.org',
     desc: "Programming",
@@ -17,7 +17,7 @@ export const core = [
   {
     avatar: 'https://github.com/1chromiumvrc.png',
     name: 'Chrome',
-    title: 'Co-Owner',
+    title: 'Co-Lead',
     org: 'Gravinium',
     orgLink: 'https://gravinium.org',
     desc: "Music",
@@ -31,7 +31,7 @@ export const core = [
   {
     avatar: 'https://github.com/hudsunvfx.png',
     name: 'hudsun',
-    title: 'Co-Owner',
+    title: 'Co-Lead',
     org: 'Gravinium',
     orgLink: 'https://gravinium.org',
     desc: "VFX",
@@ -40,6 +40,7 @@ export const core = [
             link: 'https://hudsun.gravinium.org'
         },
         { icon: 'github', link: 'https://github.com/hudsunvfx' },
+        { icon: 'linktree', link: 'https://linktr.ee/hudsun_' }
     ]
   }
 ]

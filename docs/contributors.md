@@ -35,7 +35,10 @@ import { community } from './contributors/community'
 
 <template #lead>
 This page recognizes the people contributing to Gravinium through development,
-documentation, creative work, tools, and community support.
+documentation, creative work, tools, and community support.<br><br>
+
+<small>[Learn how to Contribute](./contributing.md)</small>
+
 </template>
 
 </VPTeamPageTitle>

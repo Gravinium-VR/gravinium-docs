@@ -2,7 +2,7 @@ export const leaders = [
   {
     avatar: 'https://cdn.discordapp.com/avatars/247240721613062144/707a43dc214cb443831e1a04436d7799.webp',
     name: 'Psych',
-    title: 'Leadership',
+    title: 'Lead',
     org: 'Hobbledehoys',
     orgLink: 'https://vrlink.me/hobbledehoys',
     links: []
@@ -13,6 +13,6 @@ export const leaders = [
     title: 'DJ',
     org: 'Module',
     orgLink: 'https://vrlink.me/module',
-    links: []
+    links: [ { icon: 'soundcloud', link: 'https://soundcloud.com/justratzer' } ]
   }
 ]

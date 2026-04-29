@@ -26,6 +26,11 @@ features:
 
 ## Contributors
 
-Gravinium keeps growing through community effort and engagement.
+Gravinium wouldn't be what it is without the amazing people working behind it.
+From creators to testers, leads to supporters, every contribution helps
+bring our vision to life.
 
-[Meet the Contributors](./contributors.md)
+If you'd like to be part of our journey, we're always looking for passionate
+people to help build what's next.
+
+[Meet the Contributors](./contributors.md) <> [Contribute Yourself](./contributing.md)
