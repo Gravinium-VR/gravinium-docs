@@ -23,3 +23,9 @@ features:
   - title: Knowledge Base
     details: Guides, VRChat specific knowledge, and cross-project documentation.
 ---
+
+## Contributors
+
+Gravinium keeps growing through community effort and engagement.
+
+[Meet the Contributors](./contributors.md)
