@@ -63,7 +63,7 @@ documentation, creative work, tools, and community support.<br><br>
     <template #title>Project Contributors</template>
     <template #lead>Development, assets, design, worlds, tools, and production contributions.</template>
     <template #members>
-        <VPTeamMembers size="small" :members="projects" />
+        <div class="xs-team"><VPTeamMembers size="xs" :members="projects" /></div>
     </template>
 </VPTeamPageSection>
 
@@ -71,7 +71,7 @@ documentation, creative work, tools, and community support.<br><br>
     <template #title>Documentation Contributors</template>
     <template #lead>Writing, editing, tutorials, fixes, and documentation structure.</template>
     <template #members>
-        <VPTeamMembers size="small" :members="docs" />
+        <div class="xs-team"><VPTeamMembers size="xs" :members="docs" /></div>
     </template>
 </VPTeamPageSection>
 
@@ -79,7 +79,7 @@ documentation, creative work, tools, and community support.<br><br>
     <template #title>Community Contributors</template>
     <template #lead>Testing, feedback, suggestions, and general support.</template>
     <template #members>
-        <VPTeamMembers size="small" :members="community" />
+        <div class="xs-team"><VPTeamMembers size="xs" :members="community" /></div>
     </template>
 </VPTeamPageSection>
 

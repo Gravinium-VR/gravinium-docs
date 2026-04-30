@@ -14,7 +14,7 @@ Each project is documented separately so you can focus on just that system.
 
 Projects designed for VRChat world development.
 
-### Jilwer
+### [Jilwer](./jilwer/)
 
 Jilwer is the base system most Gravinium projects depend on. It sits on top of UdonSharp and provides systems that are otherwise missing, difficult, or repetitive to implement.
 
@@ -25,5 +25,3 @@ It implements:
 - Useful math functions
 - VRChat specific utilities
 - And more
-
-Documentation: [Jilwer](./jilwer/)

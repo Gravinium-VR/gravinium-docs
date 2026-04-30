@@ -8,11 +8,13 @@ export const leaders = [
     links: []
   },
   {
-    avatar: 'https://cdn.discordapp.com/avatars/440144870670204929/4932c13a64adfae192933ae5279c0ce7.webp',
+    avatar: './assets/images/pfp/rats.png',
     name: 'Rats',
     title: 'DJ',
     org: 'Module',
     orgLink: 'https://vrlink.me/module',
-    links: [ { icon: 'soundcloud', link: 'https://soundcloud.com/justratzer' } ]
+    links: [
+      { icon: 'soundcloud', link: 'https://soundcloud.com/justratzer' },
+    ]
   }
 ]

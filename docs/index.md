@@ -4,25 +4,43 @@ layout: home
 
 hero:
   name: "Gravinium Docs"
-  tagline: "API references, developer tools, and creation guides"
+  tagline: "The central hub for our projects, developer tools, guides, and more"
   actions:
     - theme: brand
-      text: Explore Projects
-      link: /projects/
-    - theme: alt
       text: Getting Started
       link: /guides/getting-started
 
-features:
-  - title: Project Documentation
-    details: Each Gravinium project/system is documented with its own API, guides, and examples.
+    - theme: alt
+      text: Projects
+      link: /projects/
 
-  - title: VRChat Tools
-    details: Tools, workflows, and systems for VRChat world and asset development.
+    - theme: alt
+      text: Website
+      link: https://gravinium.org
+
+features:
+  - title: Projects
+    details: Documentation for every Gravinium project, tool, and asset.
+
+  - title: Developer Docs
+    details: APIs, tooling, and internal standards.
+
+  - title: VRChat Creation
+    details: Worlds, assets, optimization guides, UdonSharp systems, and workflows.
 
   - title: Knowledge Base
-    details: Guides, VRChat specific knowledge, and cross-project documentation.
+    details: References, tutorials, troubleshooting, and research notes.
+
+  - title: Gravinium Resources
+    details: Branding, contributor docs, and internal processes.
+
+  - title: Community & Contributions
+    details: Enjoy events, manage groups, improve projects, report issues, and join future developments.
 ---
+
+::: warning
+This site is under active development and is not complete.
+:::
 
 ## Contributors
 
