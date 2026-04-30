@@ -8,7 +8,7 @@ export const leaders = [
     links: []
   },
   {
-    avatar: './assets/images/pfp/rats.png',
+    avatar: '/images/pfp/rats.png',
     name: 'Rats',
     title: 'DJ',
     org: 'Module',
