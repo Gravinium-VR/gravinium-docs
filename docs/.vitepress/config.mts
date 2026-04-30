@@ -13,16 +13,16 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Projects', link: '/projects/' },
       { text: 'Guides', link: '/guides/getting-started'},
+      { text: 'Projects', link: '/projects/' },
       { text: 'Contributors', link: '/contributors' }
     ],
 
     sidebar: {
+      '/guides/': guidesSidebar,
+      
       '/projects/': projectsSidebar,
       '/projects/jilwer/': jilwerSidebar,
-
-      '/guides/': guidesSidebar
     },
 
 
