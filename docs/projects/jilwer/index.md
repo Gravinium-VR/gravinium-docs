@@ -4,7 +4,7 @@ title: Jilwer
 description: Documentation for Jilwer, a toolkit that extends UdonSharp with runtime systems, custom types, and utilities for VRChat development.
 ---
 
-# Jilwer <Badge type="info" text="0.1.0" />
+# Jilwer <Badge type="info" text="0.2.0" />
 
 _Pronounced: Jill-wear (/ˈdʒɪl.wɛr/)_
 
@@ -19,11 +19,7 @@ reusable systems, and utility functions for VRChat world and tooling development
 
 It can be used directly in VRChat worlds or as a dependency for larger systems built on top of UdonSharp.
 
-## Quick Navigation
-
-- [Getting Started](./getting-started.md)
-- [API](./api/)
-- [Examples](./examples/)
+To start, visit the [Getting Started](./getting-started) page.
 
 ## Why Jilwer exists
 
