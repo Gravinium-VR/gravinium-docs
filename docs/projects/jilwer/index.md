@@ -19,10 +19,7 @@ reusable systems, and utility functions for VRChat world and tooling development
 
 It can be used directly in VRChat worlds or as a dependency for larger systems built on top of UdonSharp.
 
-## Quick Navigation
-
-- [Getting Started](./getting-started)
-- [API](./api)
+To start, visit the [Getting Started](./getting-started) page.
 
 ## Why Jilwer exists
 

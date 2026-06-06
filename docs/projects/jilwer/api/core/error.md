@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Error (Jilwer)
-description: Runtime methods for interacting with the type registry system.
+description: Standard value returned from failable methods throughout Jilwer.
 ---
 
 # Error

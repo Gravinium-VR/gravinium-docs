@@ -51,6 +51,6 @@ returned GameObject.
 
 | Error               | Code | Description                                        |
 | ------------------- | ---- | -------------------------------------------------- |
-| None                | 0x00 | No error exists                                    |
+| None                | 0x00 | No error exists.                                   |
 | RuntimeDoesNotExist | 0x03 | The `runtime` passed in was null.                  |
 | KeyValueNotFound    | 0x04 | The `key` could not resolve to a valid GameObject. |
