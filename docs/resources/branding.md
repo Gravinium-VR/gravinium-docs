@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Branding
-description: Images and related assets that Gravinium uses for branding.
+description: Images and related assets for the Gravinium branding.
 ---
 
 # Branding
