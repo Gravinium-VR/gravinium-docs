@@ -14,6 +14,10 @@ Jilwer is currently in active development (0.y.z) and may introduce breaking cha
 The API will be considered stable at version 1.0.0, along with complete documentation.
 :::
 
+::: warning
+These docs are out of date. Please wait for an update.
+:::
+
 Jilwer is a toolkit that extends UdonSharp with additional runtime capabilities,
 reusable systems, and utility functions for VRChat world and tooling development.
 

@@ -33,7 +33,7 @@ Here are some common places to start!
   The [discord](https://gravinium.org/discord) is a great place to start with that.
 - <strong>_Do you like writing?_</strong> We can always use help on these docs! Check out the [repo](https://github.com/Gravinium-VR/gravinium-docs)
   for more information on how to contribute.
-- <strong>_Do you DJ/produce?_</strong> Our rave group, [Module](https://vrlink.me/module) is in need of new
+- <strong>_Do you DJ/produce?_</strong> Our VRChat group, [Gravinium](https://vrlink.me/gravinium) is in need of new
   people to play at. Message us in the [discord](https://gravinium.org/discord) to reserve
   a slot.
 - <strong>_None of those fit?_</strong> No worries, we can't list everything! Please get in touch with us

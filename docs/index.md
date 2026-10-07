@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Getting Started
-      link: /guides/getting-started
+      link: /resources/getting-started
 
     - theme: alt
       text: Projects
@@ -25,22 +25,12 @@ features:
   - title: Developer Docs
     details: APIs, tooling, and internal standards.
 
-  - title: VRChat Creation
-    details: Worlds, assets, optimization guides, UdonSharp systems, and workflows.
-
   - title: Knowledge Base
     details: References, tutorials, troubleshooting, and research notes.
 
   - title: Gravinium Resources
     details: Branding, contributor docs, and internal processes.
-
-  - title: Community & Contributions
-    details: Enjoy events, manage groups, improve projects, report issues, and join future developments.
 ---
-
-::: warning
-This site is under active development and is not complete.
-:::
 
 ## Contributors
 

@@ -4,15 +4,15 @@ export const leaders = [
     name: 'Psych',
     title: 'Lead',
     org: 'Hobbledehoys',
-    orgLink: 'https://vrlink.me/hobbledehoys',
+    // orgLink: 'https://vrlink.me/hobbledehoys',
     links: []
   },
   {
     avatar: '/images/pfp/rats.png',
     name: 'Rats',
     title: 'DJ',
-    org: 'Module',
-    orgLink: 'https://vrlink.me/module',
+    org: 'Gravinium',
+    orgLink: 'https://vrlink.me/gravinium',
     links: [
       { icon: 'soundcloud', link: 'https://soundcloud.com/justratzer' },
     ]
