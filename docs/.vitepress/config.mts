@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { jilwerSidebar } from './sidebars/jilwer'
-import { guidesSidebar } from './sidebars/guides'
+import { resourcesSidebar } from './sidebars/resources'
 import { projectsSidebar } from './sidebars/projects'
 
 // https://vitepress.dev/reference/site-config
@@ -13,13 +13,13 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guides', link: '/guides/getting-started'},
+      { text: 'Resources', link: '/Resources/getting-started'},
       { text: 'Projects', link: '/projects/' },
       { text: 'Contributors', link: '/contributors' }
     ],
 
     sidebar: {
-      '/guides/': guidesSidebar,
+      '/resources/': resourcesSidebar,
       
       '/projects/': projectsSidebar,
       '/projects/jilwer/': jilwerSidebar,
