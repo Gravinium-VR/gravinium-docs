@@ -8,6 +8,7 @@ export default defineConfig({
   title: "Gravinium Docs",
   description: "The central hub for Gravinium projects, developer tools, guides, and more",
   lastUpdated: true,
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
