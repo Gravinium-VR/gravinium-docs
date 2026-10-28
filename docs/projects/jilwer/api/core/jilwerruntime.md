@@ -35,47 +35,22 @@ In order for Jilwer to inject the runtime object correctly, the property holding
 it should be public.
 :::
 
-This example shows its usage with the [ArrayList](../collections/arraylist) type.
+The runtime is mostly used internally and shouldn't be used unless you need
+to pass it to another object.
 
 ```csharp
 using UdonSharp;
 using UnityEngine;
 using Gravinium.Jilwer.Core;
-using Gravinium.Jilwer.Core.Collections;
 
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
-public class ArrayListTester : UdonSharpBehaviour
+public class RuntimeTester : UdonSharpBehaviour
 {
-    // The Jilwer build system will inject the global object into this property
-    // during the world build phase.
-    [HideInInspector] public JilwerRuntime jilwer; // [!code highlight]
+    [HideInEditor] public JilwerRuntime runtime; //[!code highlight]
 
-    private ArrayList _list;
-    private int _counter = 1;
-
-    private void Start()
+    private void OnEnable()
     {
-        // Pass the runtime to the method.
-        var err = ArrayList.New(jilwer, out _list); // [!code highlight]
-        if (err != Error.None)
-        {
-            Debug.LogError($"Failed to create ArrayList! Error: 0x{err:X2}");
-            Destroy(this);
-        }
-    }
-
-    public override void Interact()
-    {
-        _list.Add(_counter);
-        _counter++;
-
-        string msg = "[";
-        for (int i = 0; i < _list.Length(); i++)
-        {
-            if (_list.Get(i, out object num) != Error.None) return;
-            msg += num + (i < _list.Length() - 1 ? ", " : "]");
-        }
-        Debug.Log("[ArrayListTester] " + msg);
+        Debug.Log(runtime != null);
     }
 }
 ```

@@ -13,11 +13,13 @@ description: A resizable array collection that grows automatically to accommodat
 ## Example
 
 ```csharp
-var err = ArrayList.New(jilwer, out ArrayList list);
-if (err != Error.None)
-{
-    Debug.LogError($"Failed to create ArrayList! Error: 0x{err:X2}");
-}
+ArrayList list = new ArrayList();
+list.Add(1);
+list.Add(2);
+list.Get(0, out object num);
+Debug.Log((int)num); // 1
+list.Clear();
+list.Destroy();
 ```
 
 ## Declaration
@@ -28,37 +30,45 @@ if (err != Error.None)
 public class ArrayList : UdonSharpBehaviour
 ```
 
-## Methods
-
-### New
+## Constructor
 
 ```csharp
-public static Error New(JilwerRuntime runtime, out ArrayList value, int size = DefaultCapacity)
+public ArrayList(int size = DefaultCapacity)
 ```
 
-| Parameter       | Description                    |
-| --------------- | ------------------------------ |
-| runtime         | Global Jilwer runtime.         |
-| value (out)     | Returned Arraylist on success. |
-| size (optional) | Initial capacity of the array. |
+| Parameter | Description                    |
+| --------- | ------------------------------ |
+| size      | The initial size of the array. |
 
-The New method is used to create a new ArrayList.
-
-New is failable, returning an error created and returned from
-[TypeRegistry.Create](../core/typeregistry#create). If the runtime is passed in
-and the type has the [JilwerType](../core/jilwertype) attribute, it should never
-fail.
+Creates a new `ArrayList` using the [TypeRegistry](../core/typeregistry.md).
 
 ::: tip
 If the constructed ArrayList is no longer needed, `Destroy` should be called on
 the GameObject to clean it up. Even better would be reusing it.
 
+There is a dedicated [Destroy](#destroy) method for this.
+
 ```csharp
-ArrayList.New(jilwer, out ArrayList list);
-Destroy(list.gameObject); // [!code focus]
+ArrayList list = new ArrayList();
+list.Destroy(); // [!code focus]
 ```
 
 :::
+
+## Methods
+
+### SetResizeIncreasePercent
+
+```csharp
+public void SetResizeIncreasePercent(float factor)
+```
+
+| Parameter | Description                                       |
+| --------- | ------------------------------------------------- |
+| factor    | The percentage increase on resize (default: 0.5). |
+
+Sets the percentage increase of size when the array expands. The default is
+set at 50% which is standard across most languages.
 
 ### Length
 
@@ -66,7 +76,8 @@ Destroy(list.gameObject); // [!code focus]
 public int Length()
 ```
 
-Returns the current length of the ArrayList.
+Returns the current length of the ArrayList. This is the same as the number
+of elements present in the list.
 
 ### Capacity
 
@@ -74,7 +85,16 @@ Returns the current length of the ArrayList.
 public int Capacity()
 ```
 
-Returns the total current capacity of the ArrayList.
+Returns the total current capacity of the ArrayList. Once this is filled such
+that the length is equal to the capacity, the array will expand.
+
+### IsEmpty
+
+```csharp
+public bool IsEmpty()
+```
+
+Returns true or false whether the array is empty or not (if there are elements present).
 
 ### EnsureCapacity
 
@@ -89,7 +109,7 @@ public void EnsureCapacity(int capacity)
 Adds more capacity to the ArrayList ensuring there is enough space to avoid
 the ArrayList expanding multiple times.
 
-### Add
+### Add (last)
 
 ```csharp
 public void Add(object item)
@@ -100,7 +120,42 @@ public void Add(object item)
 | item      | Object being added. |
 
 Puts the item passed in at the end of the ArrayList. If the capacity is full,
-it will be expanded with an increase of 50%.
+it will be expanded.
+
+### Add (at)
+
+```csharp
+public Error Add(int index, object item)
+```
+
+| Parameter | Description               |
+| --------- | ------------------------- |
+| index     | Index to add the item at. |
+| item      | Object being added.       |
+
+Puts the item passed in at the specified index of the ArrayList. If the capacity is full,
+it will be expanded.
+
+| Error            | Code | Description                                                                               |
+| ---------------- | ---- | ----------------------------------------------------------------------------------------- |
+| IndexOutOfBounds | 0x01 | Provided index was either below zero or larger than the amount of items in the ArrayList. |
+
+### Set
+
+```csharp
+public Error Set(int index, object item)
+```
+
+| Parameter | Description          |
+| --------- | -------------------- |
+| index     | Index to replace at. |
+| item      | Object being added.  |
+
+Replaces the object at the index with the item passed in.
+
+| Error            | Code | Description                                                                               |
+| ---------------- | ---- | ----------------------------------------------------------------------------------------- |
+| IndexOutOfBounds | 0x01 | Provided index was either below zero or larger than the amount of items in the ArrayList. |
 
 ### Get
 
@@ -120,6 +175,26 @@ returned will always be null.
 | ---------------- | ---- | ----------------------------------------------------------------------------------------- |
 | IndexOutOfBounds | 0x01 | Provided index was either below zero or larger than the amount of items in the ArrayList. |
 
+### Contains
+
+```csharp
+public bool Contains(object item)
+```
+
+| Parameter | Description          |
+| --------- | -------------------- |
+| item      | Object to match for. |
+
+Returns true or false if the item is found in the array.
+
+### TrimToSize
+
+```csharp
+public void TrimToSize()
+```
+
+Recreates the array to have a capacity equal to the size.
+
 ### Remove
 
 ```csharp
@@ -136,3 +211,28 @@ position left. This operation can fail.
 | Error            | Code | Description                                                                               |
 | ---------------- | ---- | ----------------------------------------------------------------------------------------- |
 | IndexOutOfBounds | 0x01 | Provided index was either below zero or larger than the amount of items in the ArrayList. |
+
+### Clear
+
+```csharp
+public void Clear()
+```
+
+Resets the array to the default size, clearing all items.
+
+### ToArray
+
+```csharp
+public object[] ToArray()
+```
+
+Returns the ArrayList as an array.
+
+### Destroy
+
+```csharp
+public void Destroy()
+```
+
+Destroys the underlying GameObject and the ArrayList. Used to clean up the scene
+after use of the array.

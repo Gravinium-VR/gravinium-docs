@@ -4,7 +4,7 @@ title: Jilwer
 description: Documentation for Jilwer, a toolkit that extends UdonSharp with runtime systems, custom types, and utilities for VRChat development.
 ---
 
-# Jilwer <Badge type="info" text="0.2.0" />
+# Jilwer <Badge type="info" text="0.4.0" />
 
 _Pronounced: Jill-wear (/ˈdʒɪl.wɛr/)_
 
@@ -12,10 +12,6 @@ _Pronounced: Jill-wear (/ˈdʒɪl.wɛr/)_
 Jilwer is currently in active development (0.y.z) and may introduce breaking changes.
 
 The API will be considered stable at version 1.0.0, along with complete documentation.
-:::
-
-::: warning
-These docs are out of date. Please wait for an update.
 :::
 
 Jilwer is a toolkit that extends UdonSharp with additional editor and runtime
@@ -34,7 +30,7 @@ missing functionality, and providing reusable utilities that can be shared acros
 
 ## What's included
 
-- Transpiler to implement missing language features
+- Transpiler to implement some missing language features
 - Runtime systems that enable features not normally available in standard UdonSharp
 - The Type Registry for custom constructed types and advanced data structures
 - Utility functions for math, vectors, voxels, indexing, and other common areas
