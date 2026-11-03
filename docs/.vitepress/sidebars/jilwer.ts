@@ -23,6 +23,7 @@ export const jilwerSidebar: DefaultTheme.SidebarItem[] = [
           { text: 'Math', items: [
             { text: 'VectorMath', link: '/projects/jilwer/api/math/vectormath' },
             { text: 'SDFMath', link: '/projects/jilwer/api/math/sdfmath' },
+            { text: 'ArrayMath', link: '/projects/jilwer/api/math/arraymath' },
           ]},
         ]
       },

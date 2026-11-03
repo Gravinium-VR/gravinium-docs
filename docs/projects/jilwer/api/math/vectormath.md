@@ -6,7 +6,7 @@ description: Math utility methods for vectors.
 
 # VectorMath
 
-`Gravinium.Jilwer.Core.Math.VectorMath`
+`Gravinium.Jilwer.Math.VectorMath`
 
 > Math utility methods for vectors.
 

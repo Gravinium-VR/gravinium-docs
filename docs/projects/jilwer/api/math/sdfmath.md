@@ -6,7 +6,7 @@ description: Sign Distance Field methods.
 
 # SDFMath
 
-`Gravinium.Jilwer.Core.Math.SDFMath`
+`Gravinium.Jilwer.Math.SDFMath`
 
 > Sign Distance Field methods.
 
