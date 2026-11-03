@@ -20,6 +20,10 @@ export const jilwerSidebar: DefaultTheme.SidebarItem[] = [
           { text: 'Collections', items: [
             { text: 'ArrayList', link: '/projects/jilwer/api/collections/arraylist' },
           ]},
+          { text: 'Math', items: [
+            { text: 'VectorMath', link: '/projects/jilwer/api/math/vectormath' },
+            { text: 'SDFMath', link: '/projects/jilwer/api/math/sdfmath' },
+          ]},
         ]
       },
     ]
