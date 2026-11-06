@@ -6,7 +6,7 @@ export const jilwerSidebar: DefaultTheme.SidebarItem[] = [
     items: [
       { text: 'Overview', link: '/projects/jilwer/' },
       { text: 'Getting Started', link: '/projects/jilwer/getting-started'},
-
+      
       {
         text: 'Systems',
         collapsed: true,
