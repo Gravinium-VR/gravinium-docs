@@ -1,7 +1,9 @@
 ---
 layout: doc
 title: Jilwer
-description: Documentation for Jilwer, a toolkit that extends UdonSharp with runtime systems, custom types, and utilities for VRChat development.
+description: 'Jilwer is a toolkit that extends UdonSharp with additional editor and runtime
+capabilities, reusable systems, and utility functions for VRChat world and
+tooling development.'
 ---
 
 # Jilwer <Badge type="info" text="0.4.0" />

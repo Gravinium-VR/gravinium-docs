@@ -17,7 +17,7 @@ The first step is to install Jilwer into a new or existing project. This is made
 easy through the use of the VRChat Creator companion (VCC).
 
 > The earliest version of Jilwer supports the VRChat World SDK at a minimum
-> version of `3.10`.
+> version of `3.10.0`. Newer version may require new versions of the SDK.
 
 ### Gravinium Registry (Recommended)
 
